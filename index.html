@@ -18,145 +18,151 @@
 	<link rel="preload" href="assets/images/slider/person-walking-on-crasswalk.webp" as="image">
 </head>
 <body>
-<div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
-		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
-		</ul>
+<header>
+	<div class="top-header">
+		<h3 class="name">Nina Carducci</h3>
+		<div class="nav">
+			<ul>
+				<li><a href="#about">À propos</a></li>
+				<li><a href="#gallery">Galerie</a></li>
+				<li><a href="#services">Service</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
+			</ul>
+		</div>
 	</div>
-</div>
-<div id="header">
+</header>
+<main>
+	<section id="header">
 
-	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img src="assets/images/slider/person-walking-on-crasswalk.webp" class="d-block w-100" fetchpriority="high" loading="eager" alt="man in costume with bag crossing sidewalk">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/people-on-stadium.webp" class="d-block w-100" alt="Men at the stadium shouting">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="assets/images/slider/person-walking-on-crasswalk.webp" class="d-block w-100" fetchpriority="high" loading="eager" alt="man in costume with bag crossing sidewalk">
+				</div>
+				<div class="carousel-item">
+					<img src="./assets/images/slider/people-on-stadium.webp" class="d-block w-100" alt="Men at the stadium shouting">
+				</div>
+				<div class="carousel-item">
+					<img src="./assets/images/slider/wedding-kiss.webp" class="d-block w-100" alt="Wedding kiss">
+				</div>
 			</div>
-			<div class="carousel-item">
-				<img src="./assets/images/slider/wedding-kiss.webp" class="d-block w-100" alt="Wedding kiss">
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</section>
+	<section id="about">
+		<div class="picture left">
+			<img src="./assets/images/nina.webp" alt="Nina's portrait">
+		</div>
+		<div id="about-me">
+			<h3 class="about-me__title">A propos de moi</h3>
+			<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+		</div>
+	</section>
+	<section id="gallery">
+		<h3 class="title">Portfolio</h3>
+		<div class="container py-3">
+			<div class="gallery" style="display: none">
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/people-on-concert.webp" loading="lazy" alt="image in the concert above people's heads with band far away."/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/man-with-hands-crossed.webp" loading="lazy" alt="man in costume with cross hand looking at you."/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/women-on-meeting.webp" loading="lazy" alt="two women laughing at the meeting"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/four-hands-touching.webp" loading="lazy" alt="two old hands and two young hands touching each other"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/man-with-pushed-eyelids.webp" loading="lazy" alt="man with closed eyes pushing them down with force"/>
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/husband-and-wife-laughing.webp" loading="lazy" alt="man and woman just married waling and laughing"/>
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/woman-in-jeans-touching-hair.webp" loading="lazy" alt="young woman in sweater and jeans in classes touching back of her hair with right hand"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/man-singing-on-concert.webp" loading="lazy" alt="a person at the concert with microphone and view above him"/>
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/woman-with-laptop-laughing.webp" loading="lazy" alt="young woman in front of her laptop laughing"/>
 			</div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-</div>
-<div id="about">
-	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt="Nina's portrait">
-	</div>
-	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-	</div>
-</div>
-<div id="gallery">
-	<h3 class="title">Portfolio</h3>
-	<div class="container py-3">
-		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/people-on-concert.webp" loading="lazy" alt="image in the concert above people's heads with band far away."/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/man-with-hands-crossed.webp" loading="lazy" alt="man in costume with cross hand looking at you."/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/women-on-meeting.webp" loading="lazy" alt="two women laughing at the meeting"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/four-hands-touching.webp" loading="lazy" alt="two old hands and two young hands touching each other"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/man-with-pushed-eyelids.webp" loading="lazy" alt="man with closed eyes pushing them down with force"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/husband-and-wife-laughing.webp" loading="lazy" alt="man and woman just married waling and laughing"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/woman-in-jeans-touching-hair.webp" loading="lazy" alt="young woman in sweater and jeans in classes touching back of her hair with right hand"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/man-singing-on-concert.webp" loading="lazy" alt="a person at the concert with microphone and view above him"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/woman-with-laptop-laughing.webp" loading="lazy" alt="young woman in front of her laptop laughing"/>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				</blockquote>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</figure>
 		</div>
-	</div>
-	<div class="quote">
+	</section>
+	<section id="services">
+		<h3 class="title">Mes services</h3>
+		<div class="container">
+			<div class="service">
+				<div class="service__description">
+					<h3>Shooting photo</h3>
+					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				</div>
+				<div class="service__price">
+					<h4>350€/demi journée</h4>
+					<span>Matériel, déplacement inclus</span>
+				</div>
+
+			</div>
+			<div class="service">
+				<div class="service__description">
+					<h3>Retouches</h3>
+					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				</div>
+				<div class="service__price">
+					<h4>50€/photo</h4>
+					<span>2 AR par photo</span>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service__description">
+					<h3>Album photos</h3>
+					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				</div>
+				<div class="service__price">
+					<h4>400€ album A4</h4>
+					<span>30 pages recto/verso</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
-	</div>
-</div>
-<div id="services">
-	<h3 class="title">Mes services</h3>
-	<div class="container">
-		<div class="service">
-			<div class="service__description">
-				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+	</section>
+</main>
+<footer>
+	<div id="contact">
+		<div class="container">
+			<div class="form-container">
+				<h3>Une question ? Une demande de devis ?</h3>
+				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+				<form action="" method="post">
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom" required>
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" required>
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer"/>
+				</form>
 			</div>
-			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
-			</div>
-
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-			</div>
-			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
-			</div>
-		</div>
-		<div class="service">
-			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-			</div>
-			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
+			<div class="picture right">
+				<img src="./assets/images/camera.webp" alt="camera in blue and yellow-red light">
 			</div>
 		</div>
 	</div>
-</div>
-<div class="quote">
-	<figure>
-		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
-		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
-	</figure>
-</div>
-<div id="contact">
-	<div class="container">
-		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
-			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
-				<label for="nom">Nom</label>
-				<input type="text" name="nom" id="nom" required>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" required>
-				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
-			</form>
-		</div>
-		<div class="picture right">
-			<img src="./assets/images/camera.webp" alt="camera in blue and yellow-red light">
-		</div>
-	</div>
-</div>
+</footer>
 </body>
 </html>
