@@ -1,3 +1,9 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/assets/sw.js')
+    .then(() => console.log('Service Worker registered'))
+    .catch((error) => console.log('Service Worker registration failed:', error));
+}
+
 $(document).ready(function() {
     $('.gallery').mauGallery({
         columns: {
