@@ -18,11 +18,105 @@
 	<link rel="preload" href="assets/images/slider/person-walking-on-crasswalk.webp" as="image">
 	<link rel="preload" href="assets/images/slider/people-on-stadium.webp" as="image">
 	<link rel="preload" href="assets/images/slider/wedding-kiss.webp" as="image">
+
+	<!-- Person, Website and Photo Gallery-->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "Person",
+				"name": "Nina Carducci",
+				"jobTitle": "Photographer",
+				"url": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/",
+				"image": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/nina-450.webp",
+				"sameAs": [
+					"https://www.instagram.com/ninacarducci.photo/?hl=fr",
+					"https://www.facebook.com/profile.php?id=61551904838249"
+				]
+			},
+			{
+				"@type": "WebSite",
+				"name": "Nina Carducci Photography",
+				"url": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/"
+			},
+			{
+				"@type": "ImageGallery",
+				"type": "Concert Photography",
+				"image": [
+					{
+						"@type": "ImageObject",
+						"contentUrl": "http://127.0.0.1:5500/assets/images/gallery/concerts/people-on-concert.webp",
+						"name": "People on concert"
+					},
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/concerts/man-singing-on-concert.webp",
+						"name": "Man singing on concert"
+					}
+				]
+			},
+			{
+				"@type": "ImageGallery",
+				"type": "Enterprise Photography",
+				"image": [
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/entreprise/man-with-hands-crossed.webp",
+						"name": "Man with crossed hands"
+					},
+					{
+						
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/entreprise/women-on-meeting.webp",
+						"name": "Women on the meeting"
+					},
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/entreprise/woman-with-laptop-laughing.webp",
+						"name: "Woman with laptop laughing"
+					}
+				]
+			},
+			{
+				"@type": "ImageGallery",
+				"type": "Marriage Photography",
+				"image": [
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/mariage/four-hands-touching.webp",
+						"name": "For hands touching"
+					},
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/mariage/husband-and-wife-laughing.webp",
+						"name": "Husband and wife laughing"
+					}
+			},
+			{
+				"@type": "ImageGallery",
+				"type": "Portrait Photography",
+				"image": [
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/portraits/man-with-pushed-eyelids.webp",
+						"name": "Man with pushed eyelids"
+					},
+					{
+						"@type": "ImageObject",
+						"contentUrl": "https://rogiigor.github.io/Nina-Carducci-OpenClassrooms/assets/images/gallery/portraits/woman-in-jeans-touching-hair.webp",
+						"name": "Woman in jeans touching hair"
+					}
+			}
+
+		]
+	}
+	</script>
 </head>
 <body>
 <header>
 	<div class="top-header">
-		<h3 class="name">Nina Carducci</h3>
+		<h2 class="name">Nina Carducci</h2>
 		<div class="nav">
 			<ul>
 				<li><a href="#about">À propos</a></li>
@@ -81,7 +175,7 @@
 		</div>
 	</section>
 	<section id="gallery">
-		<h3 class="title">Portfolio</h3>
+		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/people-on-concert.webp" loading="lazy" alt="image in the concert above people's heads with band far away."/>
@@ -105,7 +199,7 @@
 		</div>
 	</section>
 	<section id="services">
-		<h3 class="title">Mes services</h3>
+		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<div class="service">
 				<div class="service__description">
@@ -167,7 +261,9 @@
 			</div>
 			<div class="picture right">
 				<img src="./assets/images/camera-450.webp"
-				srcset="./assets/images/camera-450.web 450w, ./assets/images/camera-900.web 900w, ./assets/images/camera.webp 2024w"
+				srcset="./assets/images/camera-450.webp 450w,
+						./assets/images/camera-900.webp 900w,
+						./assets/images/camera.webp 2024w"
 				sizes="(max-width: 600px) 450px, 900px" 
   				width="450" 
   				height="449"
