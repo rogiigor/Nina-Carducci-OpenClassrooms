@@ -1,5 +1,7 @@
 const isGithub = window.location.hostname.includes('github.io');
+console.log("isGithub: ", isGithub)
 const swPath = isGithub ? '/Nina-Carducci-OpenClassrooms/sw.js' : '/sw.js';
+console.log("swPath ", swPath);
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register(swPathS)
     .then(() => console.log('Service Worker registered'))
